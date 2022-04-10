@@ -25,7 +25,10 @@ else:
                     try:
                         oui_client = EUI(data[4]).oui.registration().org
                     except:
-                        if(p.get_manuf(data[4]) is not None): oui_client = p.get_manuf(data[4])
+                        try:
+                            if(p.get_manuf(data[4]) is not None): oui_client = p.get_manuf(data[4])
+                        except:
+                            pass
                 readable.write("\"" + bytes.fromhex(data[5]).decode('utf-8') + "\"," +
                 data[3] + "," +
                 data[4] + ",\"" +
