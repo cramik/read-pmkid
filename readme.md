@@ -6,7 +6,7 @@ Takes in a modern hccapx file for WPA hashes and outputs all of the human readab
 
 ## Installation
 
-1. clone repo or download and extract
+1. clone repo or download as zip and extract
 
 2. Download pip repo's used to handle OUI lookups
    
