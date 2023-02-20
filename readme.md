@@ -1,4 +1,4 @@
-Takes in a modern hccapx file for WPA hashes and outputs all of the human readable information into a csv file formatted as (ESSID,AP MAC,CLIENT MAC,AP OUI,CLIENT OUI)
+Takes in a file with WPA hashes formatted as "WPA-PBKDF2-PMKID+EAPOL" / hashcat 22000 and outputs all of the human readable information into a csv file formatted as (ESSID,AP MAC,CLIENT MAC,AP OUI,CLIENT OUI)
 
 
 
@@ -19,7 +19,7 @@ Takes in a modern hccapx file for WPA hashes and outputs all of the human readab
 ## Usage
 
 ```
-python3 pcapcsv.py input.hccapx output.csv
+python3 pcapcsv.py input output.csv
 ```
 
 
